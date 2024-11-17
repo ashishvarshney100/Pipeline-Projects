@@ -6,10 +6,10 @@ pipeline {
     stages {
         stage("Git Checkout") {
             steps{
-                script {
-                    sh "Git cloning...."
-                    git 'https://github.com/ashishvarshney100/Pipeline-Projects.git'
-                }
+                
+                sh "Git cloning...."
+                git changelog: false, credentialsId: 'git-cred', poll: false, url: 'https://github.com/ashishvarshney100/Pipeline-Projects.git'
+                
             }
         }
         // stage("Code Compile") {
