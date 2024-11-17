@@ -4,6 +4,7 @@ pipeline {
         stage("Git Checkout") {
             steps{
                 sh "Git cloning...."
+                git 'https://github.com/ashishvarshney100/Pipeline-Projects.git'
             }
         }
         stage("Code Compile") {
