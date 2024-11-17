@@ -4,7 +4,8 @@ pipeline {
         stage("Git Checkout") {
             steps{
                 sh "Git cloning...."
-                git 'https://github.com/ashishvarshney100/Pipeline-Projects.git'
+                git changelog: false, poll: false, url: 'https://github.com/ashishvarshney100/Ekart.git'
+                // git 'https://github.com/ashishvarshney100/Pipeline-Projects.git'
             }
         }
         // stage("Code Compile") {
