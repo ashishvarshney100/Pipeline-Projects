@@ -8,7 +8,7 @@ pipeline {
             steps{
                 
                 sh "Git cloning...."
-                git changelog: false, credentialsId: 'git-cred', poll: false, url: 'https://github.com/ashishvarshney100/Pipeline-Projects.git'
+                git changelog: false, credentialsId: 'git-cred', poll: false, url: 'https://github.com/ashishvarshney100/Pipeline1.git'
                 
             }
         }
