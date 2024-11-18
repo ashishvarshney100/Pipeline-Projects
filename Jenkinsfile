@@ -5,6 +5,7 @@ pipeline {
             steps{
                 
                 sh "Git cloning...."
+                sh "sudo apt install git -y"
                 sh "git --version"
                 git changelog: false, credentialsId: 'git-cred', poll: false, url: 'https://github.com/ashishvarshney100/Pipeline1.git'
                 
